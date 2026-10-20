@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Dev</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="scrollBar"></div>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="brand-bracket">[</span>DEV<span class="brand-bracket"
+            >]</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light">
+              🌙
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-noise"></div>
+      <div class="container h-100">
+        <div class="hero-content">
+          <p class="hero-label reveal-up" style="--delay: 0.1s">
+            Full-Stack Developer
+          </p>
+          <h1 class="hero-title reveal-up" style="--delay: 0.25s">
+            <span class="line accent-outline">hi, i'm</span>
+            <span class="line">Glean Vincent</span>
+            <span class="line">Rhamadhani.</span>
+          </h1>
+          <p class="hero-sub reveal-up" style="--delay: 0.45s">
+            Clean code. Thoughtful design. Scalable systems.
+          </p>
+          <div class="hero-cta reveal-up" style="--delay: 0.6s">
+            <a href="#projects" class="btn-main"
+              ><span class="btn-label" aria-label="View Work"
+                ><span aria-hidden="true">V</span><span aria-hidden="true">i</span><span aria-hidden="true">e</span><span aria-hidden="true">w</span><span class="letter-space" aria-hidden="true"> </span><span aria-hidden="true">W</span><span aria-hidden="true">o</span><span aria-hidden="true">r</span><span aria-hidden="true">k</span></span
+              >
+              <span class="arrow">↗</span></a
+            >
+            <a href="#contact" class="btn-ghost"
+              ><span class="btn-label" aria-label="Get in Touch"
+                ><span aria-hidden="true">G</span><span aria-hidden="true">e</span><span aria-hidden="true">t</span><span class="letter-space" aria-hidden="true"> </span><span aria-hidden="true">i</span><span aria-hidden="true">n</span><span class="letter-space" aria-hidden="true"> </span><span aria-hidden="true">T</span><span aria-hidden="true">o</span><span aria-hidden="true">u</span><span aria-hidden="true">c</span><span aria-hidden="true">h</span></span
+              ></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+      <div class="hero-grid"></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <span>React</span><span class="dot">·</span> <span>Node.js</span
+        ><span class="dot">·</span> <span>TypeScript</span
+        ><span class="dot">·</span> <span>PostgreSQL</span
+        ><span class="dot">·</span> <span>Docker</span
+        ><span class="dot">·</span> <span>Git</span><span class="dot">·</span>
+        <span>REST API</span><span class="dot">·</span> <span>Next.js</span
+        ><span class="dot">·</span> <span>React</span><span class="dot">·</span>
+        <span>Node.js</span><span class="dot">·</span> <span>TypeScript</span
+        ><span class="dot">·</span> <span>PostgreSQL</span
+        ><span class="dot">·</span> <span>Docker</span
+        ><span class="dot">·</span> <span>Git</span><span class="dot">·</span>
+        <span>REST API</span><span class="dot">·</span> <span>Next.js</span
+        ><span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="about-img-wrap fade-in">
+              <div class="about-img-frame">
+                <div class="about-img-placeholder">
+                  <img
+                    class="about-photo"
+                    src="foto-profil.jpeg"
+                    alt="Foto profil Glean Vincent Rhamadhani"
+                  />
+                </div>
+                <div class="frame-corner tl"></div>
+                <div class="frame-corner tr"></div>
+                <div class="frame-corner bl"></div>
+                <div class="frame-corner br"></div>
+              </div>
+              <div class="about-tag">
+                <span class="tag-dot"></span> Available for work
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="fade-in" style="--delay: 0.2s">
+              <p class="section-label">— About Me</p>
+              <h2 class="section-heading">Developer with an eye for detail</h2>
+              <p class="about-text">
+                Saya adalah seorang web developer yang passionate dalam
+                membangun pengalaman digital yang bermakna. Dengan pengalaman
+                membangun aplikasi dari front-end hingga back-end, saya selalu
+                berusaha menulis kode yang bersih, efisien, dan scalable.
+              </p>
+              <p class="about-text">
+                Saya percaya bahwa teknologi terbaik adalah yang tidak terasa —
+                ia bekerja dengan mulus di latar belakang, membiarkan konten dan
+                pengguna menjadi pusat perhatian.
+              </p>
+              <div class="about-stats row g-4 mt-2">
+                <div class="col-4">
+                  <div class="stat-item">
+                    <span class="stat-num">2+</span>
+                    <span class="stat-label">Years Exp.</span>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="stat-item">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label">Projects</span>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="stat-item">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-label">Clients</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section-skills" id="skills">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">— Skills & Stack</p>
+          <h2 class="section-heading">Tools I <em>work with.</em></h2>
+        </div>
+        <div class="row g-3 mt-4">
+          <div class="col-md-6 col-lg-4 fade-in" style="--delay: 0.1s">
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <span class="skill-icon">⬡</span>
+                <span class="skill-category">Frontend</span>
+              </div>
+              <div class="skill-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                <span>TypeScript</span><span>React</span><span>Next.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in" style="--delay: 0.2s">
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <span class="skill-icon">⬡</span>
+                <span class="skill-category">Backend</span>
+              </div>
+              <div class="skill-tags">
+                <span>Node.js</span><span>Express</span><span>PHP</span>
+                <span>Laravel</span><span>REST API</span><span>GraphQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-in" style="--delay: 0.3s">
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <span class="skill-icon">⬡</span>
+                <span class="skill-category">Tools & Infra</span>
+              </div>
+              <div class="skill-tags">
+                <span>Git</span><span>Docker</span><span>PostgreSQL</span>
+                <span>MySQL</span><span>MongoDB</span><span>Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">— Selected Work</p>
+          <h2 class="section-heading">Projects I've <em>built.</em></h2>
+        </div>
+
+        <div class="projects-list mt-5">
+          <div class="project-item fade-in" style="--delay: 0.1s">
+            <div class="project-number">01</div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-desc">
+                Platform belanja online full-stack dengan fitur autentikasi,
+                manajemen produk, keranjang belanja real-time, dan payment
+                gateway terintegrasi.
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="project-item fade-in" style="--delay: 0.2s">
+            <div class="project-number">02</div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Next.js</span><span>PostgreSQL</span><span>Docker</span>
+              </div>
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-desc">
+                Aplikasi manajemen tugas kolaboratif dengan fitur drag-and-drop,
+                notifikasi real-time, dan dashboard analitik tim.
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="project-item fade-in" style="--delay: 0.3s">
+            <div class="project-number">03</div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Laravel</span><span>Vue.js</span><span>MySQL</span>
+              </div>
+              <h3 class="project-title">Sistem Informasi Akademik</h3>
+              <p class="project-desc">
+                Sistem manajemen akademik untuk institusi pendidikan dengan
+                modul absensi, nilai, jadwal, dan laporan berbasis role.
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="project-item fade-in" style="--delay: 0.4s">
+            <div class="project-number">04</div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>React Native</span><span>Firebase</span
+                ><span>REST API</span>
+              </div>
+              <h3 class="project-title">Mobile Finance Tracker</h3>
+              <p class="project-desc">
+                Aplikasi mobile untuk melacak pengeluaran dan pemasukan pribadi
+                dengan visualisasi data, kategori otomatis, dan export laporan
+                PDF.
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo ↗</a>
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-inner fade-in">
+          <p class="section-label">— Contact</p>
+          <h2 class="contact-heading">Let's work <em>together.</em></h2>
+          <p class="contact-sub">
+            Punya proyek menarik? Saya selalu terbuka untuk diskusi dan
+            kolaborasi.
+          </p>
+          <a href="mailto:hello@yourname.dev" class="btn-main large">
+            <span class="btn-label" aria-label="Kirim Email"
+              ><span aria-hidden="true">K</span><span aria-hidden="true">i</span><span aria-hidden="true">r</span><span aria-hidden="true">i</span><span aria-hidden="true">m</span><span class="letter-space" aria-hidden="true"> </span><span aria-hidden="true">E</span><span aria-hidden="true">m</span><span aria-hidden="true">a</span><span aria-hidden="true">i</span><span aria-hidden="true">l</span></span>
+            <span class="arrow">↗</span>
+          </a>
+          <div class="social-links mt-5">
+            <a href="#" class="social-link">@glean_v</a>
+            <span class="social-sep">|</span>
+            <a href="#" class="social-link">0895618782863</a>
+            <span class="social-sep">|</span>
+            <a href="#" class="social-link">gleanvincent01@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div
+          class="footer-inner d-flex justify-content-between align-items-center flex-wrap gap-3"
+        >
+          <span class="footer-brand"
+            ><span class="brand-bracket">[</span>DEV<span class="brand-bracket"
+              >]</span
+            ></span
+          >
+          <span class="footer-copy">© 2026 — Crafted with precision</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
