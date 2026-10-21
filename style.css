@@ -746,15 +746,17 @@ body:has(a:hover) .cursor-follower {
 
 @media (max-width: 768px) {
   .hero-title { font-size: clamp(3rem, 12vw, 4.5rem); }
+  .hero-title .line { overflow-wrap: anywhere; }
 
   .about-img-frame { width: 260px; height: 300px; }
   .about-tag { right: 0; }
 
   .project-item {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding: 2rem 0;
   }
   .project-number { display: none; }
+  .project-links { grid-column: 1; }
 
   .cursor, .cursor-follower { display: none; }
   body { cursor: auto; }
@@ -768,6 +770,9 @@ body:has(a:hover) .cursor-follower {
 
   .hero-cta { flex-direction: column; }
   .btn-main, .btn-ghost { width: 100%; justify-content: center; }
+  .social-links { flex-direction: column; gap: 0.75rem; }
+  .social-link { overflow-wrap: anywhere; }
+  .social-sep { display: none; }
 }
 /* DARK MODE */
 body.dark-mode {
